@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* html{
+ @apply font
+} */
+body{
+  font-family: 'Cairo', sans-serif;  
+  font-weight: 400;
+
+  @apply bg-slate-50;
+  /* background-color: white; */
+
+  
+}
+.arabic{
+   font-family: 'Cairo', sans-serif;  
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Roboto Condensed', sans-serif;  */ 
+
+}
+.poster{
+  /* background-image: url('../../public//background/bac1.jpg') !important; */
+  @apply bg-gradient-to-bl from-amber-800 via-amber-600 to-amber-800;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contactForm{
+  background-image: url('../../public//background/back1.webp');
+  height: 100% !important;
+}
+.gredient{
+  @apply bg-gradient-to-br from-amber-800 via-amber-600 to-amber-800;
+  height: 100% !important;
+
+}
+
+ /* bg-gradient-to-r from-rose-100 to-teal-100 */
+  /* bg-gradient-to-r from-gray-100 to-gray-300 */
+   /* bg-gradient-to-r from-green-100 via-blue-100 to-sky-200 */
