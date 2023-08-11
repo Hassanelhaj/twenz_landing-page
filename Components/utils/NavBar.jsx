@@ -1,27 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
-import{HiHome, HiPhone} from 'react-icons/hi'
-import { FiHome, FiMenu } from "react-icons/fi";
-import { BsCCircleFill, BsFillCartFill, BsPersonCircle } from "react-icons/bs";
-import logo from '../../public/imgs/zlap/logo2.jpg'
+import { HiHome, HiPhone } from "react-icons/hi";
+import {FiMenu } from "react-icons/fi";
+import { BsPersonCircle } from "react-icons/bs";
+import logo from "../../public/imgs/zlap/logo2.jpg";
 
-import {FaBlog, FaHome, FaSearch} from 'react-icons/fa'
-// import { } from "react-icons/gi";
-import {  HiCode } from "react-icons/hi";
-import{BsFillPersonFill}from "react-icons/bs";
-import { BsFillBagFill,BsInfoCircleFill} from "react-icons/bs";
+import { FaBlog } from "react-icons/fa";
+
+import {  BsInfoCircleFill } from "react-icons/bs";
 import Link from "next/link";
 
-import { FaSearchPlus } from "react-icons/fa";
-import { MdHomeFilled } from "react-icons/md";
 import Image from "next/image";
 
-// IoRestaurantSharp
-
 const NavBar = () => {
-
-
   let [toggle, setToggle] = useState(false);
   const handleToggle = () => {
     setToggle(!toggle);
@@ -37,9 +29,9 @@ const NavBar = () => {
             className=" flex justify-center items-center gap-2 cursor-pointer"
           >
             <span>
-            <Image src={logo} className="w-8 h-8 rounded-full" />
+              <Image src={logo} className="w-8 h-8 rounded-full" />
 
-              {/* <HiCode className="text-3xl" /> */}
+           
             </span>
             <span className="text-2xl -mt-1 font-bold ">توينز</span>
           </Link>
@@ -48,36 +40,27 @@ const NavBar = () => {
           {toggle && (
             <div className="w-screen text-center mt-8 ">
               <ul className="flex flex-col items-center gap-2">
-              <Link
-              href="/"
-              className=" flex justify-center items-center gap-1 hover:opacity-70"
-            >
-              <span>
-                <HiHome className="text-2xl " />
-              </span>
-              <span>الرئيسية </span>
-            </Link>
-                <Link
-                  href="/blog"
-                  className=" flex justify-center items-center gap-1 link"
-                >
-                  <span>
-                    <FaBlog className="text-xl" />
-                  </span>
-                  <span>تونزيات</span>
-                </Link>
                 <Link
                   href="/"
+                  className=" flex justify-center items-center gap-1 hover:opacity-70"
+                >
+                  <span>
+                    <HiHome className="text-2xl " />
+                  </span>
+                  <span>الرئيسية </span>
+                </Link>
+                <Link
+                  href="/about"
                   className=" flex justify-center items-center gap-1 link"
                 >
                   <span>
-                    <BsPersonCircle className=" text-xl" />
+                    <BsInfoCircleFill className=" text-xl" />
                   </span>
                   <span>عنا</span>
                 </Link>
                 {/*  */}
                 <Link
-                  href="/"
+                  href="/contact"
                   className=" flex justify-center items-center gap-1
            link"
                 >
@@ -86,27 +69,6 @@ const NavBar = () => {
                   </span>
                   <span>تواصل معنا</span>
                 </Link>
-              
-               
-                {/* <Link
-                  href="/login"
-                  className=" flex justify-center items-center gap-1 link px-3 py-2 rounded-lg bg-amber-800 text-white"
-                >
-                  <span>
-                    <BiLogIn className="text-xl" />
-                  </span>
-                  <span>Login</span>
-                </Link>
-                <Link
-                  href="/register"
-                  className=" flex justify-center items-center gap-1 link px-3 py-2 rounded-lg border   border-amber-800 text-amber-800"
-
-                >
-                  <span>
-                    <BiSearch className="text-xl" />
-                  </span>
-                  <span>Register</span>
-                </Link> */}
               </ul>
             </div>
           )}
@@ -124,12 +86,12 @@ const NavBar = () => {
           >
             <span>
               <Image src={logo} className="w-8 h-8 rounded-full" />
-              {/* <HiCode className="text-3xl text-amber-800  "  /> */}
+       
             </span>
             <span className="text-2xl -mt-1 font-bold ">توينز</span>
           </Link>
           <ul className="flex justify-center items-center  lg:gap-3 xl:gap-6 lg:ml-6 xl:mr-10">
-          <Link
+            <Link
               href="/"
               className=" flex justify-center items-center gap-1 hover:opacity-70"
             >
@@ -138,17 +100,6 @@ const NavBar = () => {
               </span>
               <span>الرئيسية</span>
             </Link>
-            <Link
-              href="/blog"
-              className=" flex justify-center items-center gap-1 hover:opacity-70"
-            >
-              <span>
-                <FaBlog className="text-xl" />
-              </span>
-              <span>تونزيات</span>
-            </Link>
-            {/*  */}
-          
             <Link
               href="/about"
               className=" flex justify-center items-center gap-1 hover:opacity-70"
@@ -167,33 +118,11 @@ const NavBar = () => {
               </span>
               <span>تواصل معنا</span>
             </Link>
-           
-            {/* <div className="ml-1 flex items-center gap-2">
-              <Link
-                href="/login"
-                className=" flex justify-center items-center gap-1 px-3 py-2 bg-amber-800 rounded-lg text-white hover:opacity-70"
-              >
-                <span>
-                  <BiLogIn className="text-xl" />
-                </span>
-                <span>Login</span>
-              </Link>
-              <Link
-                href="/register"
-                className=" flex justify-center items-center gap-1 text-amber-800 px-3 py-2 rounded-lg border border-amber-800 bg-white hover:opacity-70"
-              >
-                <span>
-                  <BiLogIn className="text-xl" />
-                </span>
-                <span>Register</span>
-              </Link>
-            </div> */}
           </ul>
         </div>
       </nav>
     </main>
   );
 };
-// IoRestaurantSharp
 
 export default NavBar;

@@ -1,9 +1,15 @@
-import React from 'react'
-import background from '../../public/background/bac1.jpg'
-import Image from 'next/image'
-// import { Image } from 'react-bootstrap'
+import React, { useRef, useState } from 'react'
 
 const ContactForm = () => {
+ 
+const [lable,setLable] = useState('')
+  const handleSend = ()=>{
+  
+    setLable('تم إرسال رسالتك ')
+
+  }
+
+
   return (
     <main className={`gredient
     contactForm flex flex-col justify-center items-center p-2 lg:p-12`}>
@@ -14,7 +20,7 @@ const ContactForm = () => {
      shadow-[0_3px_10px_rgb(0,0,0,0.2)]  shadow-white rounded-lg ">
        <div className="flex flex-col justify-start items-start gap-2 mb-4">
         <p className="text-sm text-white">الأسم</p>
-        <input
+        <input  required
           type="text"
           className="w-64 sm:w-72 mt-1 px-3 py-2 bg-transparent border
    shadow-sm border-white placeholder-white focus:outline-none 
@@ -25,7 +31,7 @@ const ContactForm = () => {
       </div> 
       <div className="flex flex-col justify-start items-start gap-2 mb-4">
         <p className="text-sm text-white">البريد الألكتروني</p>
-        <input
+        <input  required 
           type="text"
           className="w-64 sm:w-72 mt-1 px-3 py-2 bg-transparent border
    shadow-sm border-white placeholder-white focus:outline-none 
@@ -36,7 +42,7 @@ const ContactForm = () => {
       </div>                   
       <div className="flex flex-col justify-start items-start gap-2 mb-4 text-white">
         <p lassName="text-sm text-white">التفاصيل</p>
-        <textarea          
+        <textarea     required    
           
           className="w-64 sm:w-72 mt-1 px-3 py-2 bg-transparent border
    shadow-sm border-white placeholder-white focus:outline-none 
@@ -46,12 +52,13 @@ const ContactForm = () => {
         />
       </div>
     
-      <p className=" bg-transparent shadow-[0_3px_10px_rgb(0,0,0,0.2)]   shadow-amber-100  cursor-pointer text-white
+      <p onClick={handleSend}
+      className=" bg-transparent shadow-[0_3px_10px_rgb(0,0,0,0.2)]   shadow-amber-100  cursor-pointer text-white
        font-medium py-2 w-64 sm:w-72 text-center rounded-lg text-transparent">إرسال</p>
+       <p className='mt-2 text-green-100'>{lable}</p>
     </div>
 
 
-{/* <Image src={background}/> */}
     </main>
   )
 }

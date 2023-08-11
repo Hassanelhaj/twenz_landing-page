@@ -24,11 +24,12 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                   <ul className="text-gray-400 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <Link href="/" className="hover:underline ">Facebook</Link>
+                          <a target='_blank' href="https://www.facebook.com/twinscafesudan
+" className="hover:underline ">Facebook</a>
                       </li>
                       <li>
-                          <Link href="/" 
-                          className="hover:underline">Twitter</Link>
+                          <a target='_blank' href="mailto:Aboisam1991@gmail.com" 
+                          className="hover:underline">Emali</a>
                       </li>
                   </ul>
               </div>

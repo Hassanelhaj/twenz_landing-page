@@ -29,14 +29,9 @@ const Home = () => {
         <Services/>
       </section>
       </section>
-      {/* <section className='w-full'>
-      </section> */}
     
       <section className='w-full mt-4 flex-col gap-3 flex mb-1'>
-
       <SubTitle title={"زلابيتنا"} />
-        
-        {/* <Services/> */}
         <Products/>
       </section>
     </main>

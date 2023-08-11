@@ -21,7 +21,7 @@ const About = ({data}) => {
             
         </section>
         </section>
-        <section><Image src={data.img} className='w-64 object-fill overflow-hidden  h-64' /></section>
+        <section><Image priority src={data.img} className='w-64 object-fill overflow-hidden  h-64' /></section>
 
     </div>
   )

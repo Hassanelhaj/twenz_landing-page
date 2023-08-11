@@ -21,7 +21,7 @@ const Products = () => {
     <div className='flex justify-center items-center flex-wrap gab-2 mt-3'>
         {
             data.map((img,ind)=>{
-                return <div key= {ind}><Image className='w-64 h-64 rounded-md' src={img} /></div>
+                return <div key= {ind}><Image priority className='w-64 h-64 rounded-md' src={img} /></div>
             })
         }
     </div>

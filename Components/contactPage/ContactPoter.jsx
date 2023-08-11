@@ -11,14 +11,14 @@ const ContactPoter = () => {
         
 
         <p className='font-semibold w-64'>
-          حلك قعدة في توينز , شاي مقنن , زلابية بالصوص
+            حلك قعدة في توينز , شاي مقنن , زلابية بالصوص اتواصلوا معانا عبر 
 
         </p>
         <section className='flex items-center gap-2 font-medium  mt-2 '>
-           {/* <span className='text-3xl cursor-pointer hover:opacity-80'><MdEmail/></span> */}
-           <span className='text-3xl cursor-pointer hover:opacity-80'><MdEmail/></span>
-           <span className='text-3xl cursor-pointer hover:opacity-80'><FaFacebook/></span>
-           <span className='text-3xl cursor-pointer hover:opacity-80'><FaLinkedin/></span> 
+      
+           <a target='_blank'  href='mailto:Aboisam1991@gmail.com' className='text-3xl cursor-pointer hover:opacity-80'><MdEmail/></a>
+           <a target='_blank'  href='https://www.facebook.com/twinscafesudan' className='text-3xl cursor-pointer hover:opacity-80'><FaFacebook/></a>
+          
         </section>
 
         </section>

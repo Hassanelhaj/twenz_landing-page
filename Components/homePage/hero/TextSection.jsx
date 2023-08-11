@@ -18,11 +18,11 @@ const TextSection = () => {
 زلابية بالشوكولاتة  حتبيض قلبك 😎 حتطلع من المحل وانت راضي عن كل الزعلوك ☺️✔️
         </p>
         <div className='capitalize flex items-center gap-2 mt-4'>
-        <Link href='/' className='px-2 py-2  rounded-lg shadow-md  border border-amber-800 text-amber-800 bg-white'>
-              خواطر تونزية
+        <Link href='/contact' className='px-2 py-2  rounded-lg shadow-md  border border-amber-800 text-amber-800 bg-white'>
+               اتواصل مع توينز
             </Link>
-            <Link href='/' className='px-2 py-2  rounded-lg shadow-md bg-amber-800 text-white'>
-              تصفح مواقعنا
+            <Link href='/about' className='px-2 py-2  rounded-lg shadow-md bg-amber-800 text-white'>
+                اعرف قصة توينز
             </Link>
           
         </div>
