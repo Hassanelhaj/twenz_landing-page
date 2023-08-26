@@ -5,7 +5,7 @@ const ContactForm = () => {
 const [lable,setLable] = useState('')
   const handleSend = ()=>{
   
-    setLable('تم إرسال رسالتك ')
+    setLable(' يتم معالجة طلبك ')
 
   }
 
@@ -53,7 +53,7 @@ const [lable,setLable] = useState('')
       </div>
     
       <p onClick={handleSend}
-      className=" bg-transparent shadow-[0_3px_10px_rgb(0,0,0,0.2)]   shadow-amber-100  cursor-pointer text-white
+      className=" bg-transparent shadow-[0_3px_10px_rgb(0,0,0,0.2)]     cursor-pointer text-white
        font-medium py-2 w-64 sm:w-72 text-center rounded-lg text-transparent">إرسال</p>
        <p className='mt-2 text-green-100'>{lable}</p>
     </div>

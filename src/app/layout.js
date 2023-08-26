@@ -4,8 +4,8 @@ import NavBar from "../../Components/utils/NavBar";
 import Footer from "../../Components/utils/Footer";
 
 export const metadata = {
-  title: "زلابية",
-  description: "متخًصصون في الزلابية بكل صوصاتها ",
+  title: "زلابية توينز",
+  description: "متخًصصون في المقنن الزلابية بكل صوصاتها ",
 };
 
 export default function RootLayout({ children }) {

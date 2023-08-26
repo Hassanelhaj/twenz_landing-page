@@ -3,10 +3,8 @@
 import React, { useState } from "react";
 import { HiHome, HiPhone } from "react-icons/hi";
 import {FiMenu } from "react-icons/fi";
-import { BsPersonCircle } from "react-icons/bs";
-import logo from "../../public/imgs/zlap/logo2.jpg";
 
-import { FaBlog } from "react-icons/fa";
+import logo from "../../public/imgs/logo.jpg";
 
 import {  BsInfoCircleFill } from "react-icons/bs";
 import Link from "next/link";

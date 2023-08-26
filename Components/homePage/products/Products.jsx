@@ -18,7 +18,7 @@ import Image from 'next/image';
 const Products = () => {
     let data = [zl1,zl2,zl3,zl4,zl5,zl6,zl7,zl8,zl9,zl10,];
   return (
-    <div className='flex justify-center items-center flex-wrap gab-2 mt-3'>
+    <div className='flex justify-center items-center flex-wrap gap-2 lg:gap-1 mt-3'>
         {
             data.map((img,ind)=>{
                 return <div key= {ind}><Image priority className='w-64 h-64 rounded-md' src={img} /></div>

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 // import { HiCode } from "react-icons/hi";
-import logo from '../../public/imgs/zlap/logo2.jpg'
+import logo from '../../public/imgs/logo.jpg'
 import Image from 'next/image';
 
 const Footer = () => {
